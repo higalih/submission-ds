@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import streamlit as st
-from babel.numbers import format_currency
+# from babel.numbers import format_currency
 
 sns.set(style="dark")
 # df = pd.read_csv("main_data.csv")
