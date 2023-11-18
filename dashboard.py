@@ -5,13 +5,11 @@ import streamlit as st
 from babel.numbers import format_currency
 
 sns.set(style="dark")
-# df = pd.read_csv("file:dashboard/main_data.csv")
+# df = pd.read_csv("main_data.csv")
 df = pd.read_csv("main_data.csv")
 
-# bike_rental = pd.read_csv("file:data/day.csv")
-
 # Set the title
-st.title("Bike Rental EDA Dashboard")
+st.title("Bike Rental Dashboard")
 
 # Display some EDA results
 st.subheader("Demand Across Different Seasons")
