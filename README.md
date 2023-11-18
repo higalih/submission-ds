@@ -1,5 +1,8 @@
 # Submission DS Galih
 ***
+### Link:
+https://galih-ds.streamlit.app/
+***
 ## Setup environtment
 ```
 conda create --name main-ds python=3.9
