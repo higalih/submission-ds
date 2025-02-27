@@ -89,12 +89,15 @@ Pada proyek ini, kami membangun dua jenis sistem rekomendasi untuk memberikan so
 1. Weighted Rating Recommender
 	- Model ini menggunakan formula IMDB untuk menghitung skor berbobot berdasarkan `vote_average` dan `vote_count`. Film dengan vote count di atas persentil ke-90 dipilih untuk direkomendasikan.  
 	- Output: Top 10 film berdasarkan skor berbobot. Contoh hasil rekomendasi:
+![1](https://github.com/user-attachments/assets/43da95b8-a33a-401b-a2be-f30e6059fc64)
 2. Content-Based Recommender
 	- Model ini menggunakan TF-IDF Vectorizer dan cosine similarity untuk merekomendasikan film berdasarkan kemiripan teks pada kolom `overview`.    
 	- Output: Top 10 film berdasarkan kemiripan overview dengan film input (misalnya, "Interstellar"). Contoh hasil rekomendasi:
+![2](https://github.com/user-attachments/assets/d24245ff-634e-4375-8ae0-e95b8aa709ac)
 3. Advanced Content-Based Recommender
 	- Model ini menggabungkan fitur-fitur seperti `keywords`, `cast`, `director`, dan `genres` untuk membuat representasi film yang lebih kaya. Representasi ini kemudian digunakan untuk menghitung cosine similarity.    
 	- Output: Top 10 film berdasarkan kombinasi fitur dengan film input (misalnya, "The Dark Knight Rises"). Contoh hasil rekomendasi:
+![3](https://github.com/user-attachments/assets/6df96f64-2e53-4bc8-b3a5-aede18336d8d)
 
 **Kami menyajikan dua solusi utama:**
 1. **Weighted Rating Recommender** : Berfokus pada popularitas dan rating pengguna.
@@ -118,5 +121,7 @@ Hasil evaluasi menunjukkan bahwa:
 
 **Penjelasan formula metrik dan bagaimana metrik tersebut bekerja.**
 Cosine Similarity dengan formula:
+
 `cos_sim(A, B) = (A · B) / (||A|| * ||B||)`
+
 Di mana `A` dan `B` adalah vektor representasi film. Nilai cosine similarity mendekati 1 menunjukkan bahwa dua film sangat mirip. 
